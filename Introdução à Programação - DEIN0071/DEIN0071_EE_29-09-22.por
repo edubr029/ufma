@@ -9,14 +9,20 @@ programa
 		real valorDaConta
 		real valorDaContaComDesconto
 
-		escreva("Entre com o consumo de água, o valor do salário mínimo e o percentual de desconto de 0% à 100%\n")
-		leia(consumo, salarioMinimo, percentual)
+		escreva("Entre com o consumo de água\n")
+		leia(consumo)
+
+		escreva("Entre com o valor do salário mínimo\n")
+		leia(salarioMinimo)
+
+		escreva("Entre com o percentual de desconto de 0% à 100%\n")
+		leia(percentual)
 
 		valorDaConta = (0.02 * salarioMinimo * consumo) / 1000
 		valorDaContaComDesconto = valorDaConta * (1 - percentual/100)
 
-		escreva("O valor da conta SEM desconto é: ", valorDaConta, "\n")
-		escreva("O valor da conta COM desconto é: ", valorDaContaComDesconto)
+		escreva("O valor da conta SEM desconto é: R$", valorDaConta, "\n")
+		escreva("O valor da conta COM desconto é: R$", valorDaContaComDesconto)
 		
 	}
 }
