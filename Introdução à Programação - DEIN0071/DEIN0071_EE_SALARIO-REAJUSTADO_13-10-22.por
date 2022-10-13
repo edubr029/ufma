@@ -1,30 +1,29 @@
 programa
 {
+	
 	funcao inicio()
 	{
-		real a, b, c, aux
+		real salario, salarioReajustado, percentualDeReajuste
 
-		escreva("Escreva o valor de A: \n")
-		leia(a)
-
-		escreva("Escreva o valor de B: \n")
-		leia(b)
-
-		escreva("Escreva o valor de C: \n")
-		leia(c)
+		escreva("Qual é o salário? \n")
+		leia(salario)
 		
-		aux = a
-
-		se(b < aux)
+		se(salario < 500
 		{
-			aux = b
+			percentualDeReajuste = 0.15
 		}
-		se(c < aux)
+		senao se(salario < 1000)
 		{
-			aux = c
+			percentualDeReajuste = 0.1
+		}
+		senao
+		{
+			percentualDeReajuste = 0.05
 		}
 
-		escreva("O menor valor é: ", aux)
+		salarioReajustado = salario * (1 + percentualDeReajuste)
+
+		escreva("O salário reajustado é de: R$", salarioReajustado)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 265; 
+ * @POSICAO-CURSOR = 282; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

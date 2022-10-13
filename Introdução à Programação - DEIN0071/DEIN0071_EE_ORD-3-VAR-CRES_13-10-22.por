@@ -14,19 +14,22 @@ programa
 		escreva("Escreva o valor de C: \n")
 		leia(c)
 
-		se(a > b){
+		se(a > b)
+		{
 			aux = a
 			a = b
 			b = aux
 		}
 		
-		se(a > c){
+		se(a > c)
+		{
 			aux = a
 			a = c
 			c = aux
 		}
 		
-		se(b > c){
+		se(b > c)
+		{
 			aux = c
 			c = b
 			b = aux
@@ -41,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 447; 
+ * @POSICAO-CURSOR = 322; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
