@@ -30,7 +30,7 @@ int main() {
     } while(notValidSize);
     printf("\n");
 
-    printf("Please, enter the elements of the matrix\n");
+    printf("Please, enter the elements of the matrix:\n");
     for (rows = 0; rows < maxRows; rows++)
         for (cols = 0; cols < maxCols; cols++) {
             printf("[%d][%d]: ", rows + 1, cols + 1);
