@@ -89,7 +89,7 @@ float calcStandardDeviation(int vector[], int maxSize) {
 
     for(rows = 0; rows < maxSize; rows++)
         standardDeviation += pow(vector[rows] - mean, 2);
-    
+
     return sqrt(standardDeviation / maxSize);
 }
 
@@ -197,6 +197,6 @@ int main() {
             break;
     }
     printf("\n");
-    
+
     return 0;
 }
