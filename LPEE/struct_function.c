@@ -8,85 +8,83 @@
 #define MAX_COLS 1024
 
 #define MAX_STUDENT 5
-#define MAX_NOTAS 5
+#define MAX_GRADE 5
 
-struct turma {
-    char nome[MAX_SIZE];
-    int notas[MAX_SIZE];
-    int media;
-};
+typedef struct class {
+    char name[MAX_SIZE];
+    int grade[MAX_SIZE];
+    int avarage;
+} class_t;
 
-typedef struct turma turma;
-
-void lerAlunos(turma aluno[MAX_STUDENT]) {
+void readStudents(class_t student[MAX_STUDENT]) {
     for(int i = 0; i < MAX_STUDENT; i++) {
         printf("Aluno %d: ", i+1);
-        gets(aluno[i].nome);
+        gets(student[i].name);
     }
 }
 
-void lerNota(turma aluno[MAX_STUDENT]){
-    int notainvalida = 0;
+void readGrade(class_t student[MAX_STUDENT]){
+    int invalidGrade = 0;
     for(int i = 0; i < MAX_STUDENT; i++) {
-        printf("Digite as notas do aluno %s: \n", aluno[i].nome);
+        printf("Digite as notas do aluno %s: \n", student[i].name);
         for(int j = 0; j < MAX_STUDENT; j++) {
             do {
                 printf("Nota %d: ", j+1);
-                scanf("%d", &aluno[i].notas[j]);
+                scanf("%d", &student[i].grade[j]);
 
-                notainvalida = aluno[i].notas[j] > 10 || aluno[i].notas[j] < 0;
+                invalidGrade = student[i].grade[j] > 10 || student[i].grade[j] < 0;
                 
-                if(notainvalida)
+                if(invalidGrade)
                     printf("Valor inválido! Insira novamente. \n");
-            } while(notainvalida);
+            } while(invalidGrade);
         }
     }
 }
 
-void calcularMedia(turma aluno[MAX_STUDENT]) {
-    int soma = 0;
+void calculateAvarage(class_t student[MAX_STUDENT]) {
+    int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++) {
         for(int j = 0; j < MAX_STUDENT; j++)
-            soma += aluno[i].notas[j];
-        aluno[i].media = (soma / MAX_NOTAS);
-        soma = 0;
+            sum += student[i].grade[j];
+        student[i].avarage = (sum / MAX_GRADE);
+        sum = 0;
     }
 }
 
-void calcularMediaGeral(turma aluno[MAX_STUDENT], int *mediaGeral) {
-    int soma = 0;
+void calculateOverallAvarage(class_t student[MAX_STUDENT], int *avarageGrade) {
+    int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++)
-        soma += aluno[i].media;
-    *mediaGeral = (soma / MAX_STUDENT);
+        sum += student[i].avarage;
+    *avarageGrade = (sum / MAX_STUDENT);
 }
 
-void exibirMedia(turma aluno[MAX_STUDENT]) {
+void showAvarage(class_t student[MAX_STUDENT]) {
     for(int i = 0; i < MAX_STUDENT; i++)
-        printf("%s - Média: %d \n", aluno[i].nome, aluno[i].media);
+        printf("%s - Média: %d \n", student[i].name, student[i].avarage);
 }
 
-void exibirMediaGeral(int mediaGeral) {
-    printf("Media Geral: %d", mediaGeral);
+void showOverallAvarage(int avarageGrade) {
+    printf("Media Geral: %d", avarageGrade);
 }
 
 int main() {
-    turma aluno[MAX_STUDENT];
-    int mediaGeral;
+    class_t student[MAX_STUDENT];
+    int avarageGrade;
 
     setlocale(LC_ALL, "Portuguese");
 
     printf("Entre com os nomes dos alunos.\n");
-    lerAlunos(aluno);
+    readStudents(student);
 
     printf("Entre com as notas dos alunos.\n");
-    lerNota(aluno);
+    readGrade(student);
 
-    calcularMedia(aluno);
-    calcularMediaGeral(aluno, &mediaGeral);
+    calculateAvarage(student);
+    calculateOverallAvarage(student, &avarageGrade);
 
     printf("As médias dos alunos são:\n");
-    exibirMedia(aluno);
-    exibirMediaGeral(mediaGeral);
+    showAvarage(student);
+    showOverallAvarage(avarageGrade);
 
     return 0;
 }
