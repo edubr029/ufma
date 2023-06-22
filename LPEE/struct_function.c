@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <locale.h>
 
 #define MAX_SIZE 1024
@@ -13,17 +14,18 @@
 typedef struct class {
     char name[MAX_SIZE];
     int grade[MAX_SIZE];
-    int avarage;
+    int average;
 } class_t;
 
-void readStudents(class_t student[MAX_STUDENT]) {
+void readStudents(class_t *student) {
     for(int i = 0; i < MAX_STUDENT; i++) {
         printf("Aluno %d: ", i+1);
-        gets(student[i].name);
+        fgets(student[i].name, MAX_SIZE, stdin);
+        student[i].name[strcspn(student[i].name, "\n")] = '\0';
     }
 }
 
-void readGrade(class_t student[MAX_STUDENT]){
+void readGrade(class_t *student){
     int invalidGrade = 0;
     for(int i = 0; i < MAX_STUDENT; i++) {
         printf("Digite as notas do aluno %s: \n", student[i].name);
@@ -41,35 +43,35 @@ void readGrade(class_t student[MAX_STUDENT]){
     }
 }
 
-void calculateAvarage(class_t student[MAX_STUDENT]) {
+void calculateAverage(class_t *student) {
     int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++) {
         for(int j = 0; j < MAX_STUDENT; j++)
             sum += student[i].grade[j];
-        student[i].avarage = (sum / MAX_GRADE);
+        student[i].average = (sum / MAX_GRADE);
         sum = 0;
     }
 }
 
-void calculateOverallAvarage(class_t student[MAX_STUDENT], int *avarageGrade) {
+void calculateOverallAverage(class_t student[MAX_STUDENT], int *averageGrade) {
     int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++)
-        sum += student[i].avarage;
-    *avarageGrade = (sum / MAX_STUDENT);
+        sum += student[i].average;
+    *averageGrade = (sum / MAX_STUDENT);
 }
 
-void showAvarage(class_t student[MAX_STUDENT]) {
+void showAverage(class_t student[MAX_STUDENT]) {
     for(int i = 0; i < MAX_STUDENT; i++)
-        printf("%s - Média: %d \n", student[i].name, student[i].avarage);
+        printf("%s - Média: %d \n", student[i].name, student[i].average);
 }
 
-void showOverallAvarage(int avarageGrade) {
-    printf("Media Geral: %d", avarageGrade);
+void showOverallAverage(int averageGrade) {
+    printf("Média Geral: %d", averageGrade);
 }
 
 int main() {
     class_t student[MAX_STUDENT];
-    int avarageGrade;
+    int averageGrade;
 
     setlocale(LC_ALL, "Portuguese");
 
@@ -79,12 +81,12 @@ int main() {
     printf("Entre com as notas dos alunos.\n");
     readGrade(student);
 
-    calculateAvarage(student);
-    calculateOverallAvarage(student, &avarageGrade);
+    calculateAverage(student);
+    calculateOverallAverage(student, &averageGrade);
 
     printf("As médias dos alunos são:\n");
-    showAvarage(student);
-    showOverallAvarage(avarageGrade);
+    showAverage(student);
+    showOverallAverage(averageGrade);
 
     return 0;
 }
