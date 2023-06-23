@@ -57,7 +57,7 @@ void calculateOverallAverage(class_t student[MAX_STUDENT], int *averageGrade) {
     int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++)
         sum += student[i].average;
-    *averageGrade = (sum / MAX_STUDENT);
+    *averageGrade = (sum / MAX_GRADE);
 }
 
 void showAverage(class_t student[MAX_STUDENT]) {
