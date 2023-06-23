@@ -1,4 +1,4 @@
-# INTRODUÇÃO À PROGRAMAÇÃO
+# IPEE - INTRODUÇÃO À PROGRAMAÇÃO
 
 You will find here, all **source codes** of the classes of this discipline.
 
