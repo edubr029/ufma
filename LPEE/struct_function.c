@@ -20,7 +20,10 @@ typedef struct class {
 void readStudents(class_t *student) {
     for(int i = 0; i < MAX_STUDENT; i++) {
         printf("Aluno %d: ", i+1);
-        fgets(student[i].name, MAX_SIZE, stdin);
+        if(fgets(student[i].name, MAX_SIZE, stdin) == NULL) {
+            printf("Erro ao ler o nome do aluno.\n");
+            exit(1);
+        }
         student[i].name[strcspn(student[i].name, "\n")] = '\0';
     }
 }
@@ -29,10 +32,13 @@ void readGrade(class_t *student){
     int invalidGrade = 0;
     for(int i = 0; i < MAX_STUDENT; i++) {
         printf("Digite as notas do aluno %s: \n", student[i].name);
-        for(int j = 0; j < MAX_STUDENT; j++) {
+        for(int j = 0; j < MAX_GRADE; j++) {
             do {
                 printf("Nota %d: ", j+1);
-                scanf("%d", &student[i].grade[j]);
+                if(scanf("%d", &student[i].grade[j]) != 1) {
+                    printf("Erro ao ler a nota do aluno.\n");
+                    exit(1);
+                }
 
                 invalidGrade = student[i].grade[j] > 10 || student[i].grade[j] < 0;
                 
@@ -46,7 +52,7 @@ void readGrade(class_t *student){
 void calculateAverage(class_t *student) {
     int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++) {
-        for(int j = 0; j < MAX_STUDENT; j++)
+        for(int j = 0; j < MAX_GRADE; j++)
             sum += student[i].grade[j];
         student[i].average = (sum / MAX_GRADE);
         sum = 0;
@@ -57,7 +63,7 @@ void calculateOverallAverage(class_t student[MAX_STUDENT], int *averageGrade) {
     int sum = 0;
     for(int i = 0; i < MAX_STUDENT; i++)
         sum += student[i].average;
-    *averageGrade = (sum / MAX_GRADE);
+    *averageGrade = (sum / MAX_STUDENT);
 }
 
 void showAverage(class_t student[MAX_STUDENT]) {
