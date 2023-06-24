@@ -27,10 +27,7 @@ void generateRandomNumber(char *generatedNumber) {
     char *result = malloc(digits+1);
 
     sprintf(result, "%0*d", digits, random_number);
-    printf("%s\n", result);
-
     strcpy(generatedNumber, result);
-
     free(result);
 }
 
@@ -39,9 +36,9 @@ void registeringUserRndNumber(user_t *user) {
     char previousNumber[MAX_SIZE] = "";
 
     for(int i = 0; i < MAX_USR; i++) {
-        do {
+        do
             generateRandomNumber(generatedNumber);
-        } while(strcmp(generatedNumber, previousNumber) == 0);
+        while(strcmp(generatedNumber, previousNumber) == 0);
 
         strcpy(user[i].number, generatedNumber);
         strcpy(previousNumber, generatedNumber);
