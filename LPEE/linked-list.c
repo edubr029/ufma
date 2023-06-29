@@ -71,6 +71,8 @@ void freemem(node_t *head) {
 int main() {
     node_t *head = NULL;
 
+    setlocale(LC_ALL, "Portuguese");
+
     createLinkedList(&head);
     printl(head);
 
