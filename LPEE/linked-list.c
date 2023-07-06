@@ -4,8 +4,7 @@
 
 #define MAX_SIZE 1024
 
-typedef struct node
-{
+typedef struct node {
     int data;
     struct node *next;
 } node_t;
@@ -35,12 +34,34 @@ node_t* order_insert(node_t *head, int new_data) {
         head = new_node;
     else {
         node_t *p = head;
-        while(p->next != NULL) {
+        while(p->next != NULL)
             p = p->next;
-        }
         p->next = new_node;
     }
     
+    return head;
+}
+
+node_t* removeAllEvenNumbers(node_t *head) {
+    node_t *ant = NULL;
+    node_t *aux = NULL;
+    node_t *p = head;
+    
+    while(p != NULL) {
+        if(p->data % 2 == 0) {
+            if(ant == NULL)
+                head = p->next;
+            else
+                ant->next = p->next;
+            aux = p;
+            p = p->next;
+            free(aux);
+        }
+        else {
+            ant = p;
+            p = p->next;
+        }
+    }
     return head;
 }
 
@@ -64,8 +85,7 @@ void freemem(node_t *head) {
         t = p->next;
         free(p);
         p = t;
-    }
-    
+    }    
 }
 
 int main() {
@@ -74,6 +94,11 @@ int main() {
     setlocale(LC_ALL, "Portuguese");
 
     createLinkedList(&head);
+    printl(head);
+
+    printf("\n");
+
+    removeAllEvenNumbers(head);
     printl(head);
 
     freemem(head);
