@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <locale.h>
 
-#define MAX_SIZE 1024
-
 typedef struct node {
     int data;
     struct node *next;
