@@ -62,6 +62,7 @@ node_t* removeAllEvenNumbers(node_t *head) {
             p = p->next;
         }
     }
+    free(p);
     return head;
 }
 
