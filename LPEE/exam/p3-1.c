@@ -65,14 +65,12 @@ int findWordVertical(char mtx[MAX_SIZE][MAX_SIZE], char *word, int maxSize) {
     int rows = 0, cols;
     int wordCount = 0;
 
-        for(cols = 0; cols < maxSize; cols++) {
-            for(int i = 0; i < (strlen(word)-1); i++)
-                if(mtx[rows][cols] == word[i] && mtx[rows][cols] == word[i+1]) {
-                    printf("MTX: %c | STR: %c\n", mtx[rows][cols], word[i]);
-                    wordCount++;
-                }
-            rows++;
-        }
+    for(cols = 0; cols < maxSize; cols++) {
+        for(int i = 0; i < (strlen(word)-1); i++)
+            if(mtx[rows][cols] == word[i] && mtx[rows][cols] == word[i+1]) 
+            wordCount++;
+        rows++;        
+    }
     
     return wordCount;
 }
@@ -81,14 +79,12 @@ int findWordHorizontal(char mtx[MAX_SIZE][MAX_SIZE], char *word, int maxSize) {
     int rows, cols = 0;
     int wordCount = 0;
 
-        for(rows = 0; rows < maxSize; rows++) {
-            for(int i = 0; i < (strlen(word)-1); i++)
-                if(mtx[rows][cols] == word[i] && mtx[rows][cols] == word[i+1]) {
-                    printf("MTX: %c | STR: %c\n", mtx[rows][cols], word[i]);
-                    wordCount++;
-                }
-            cols++;
-        }
+    for(rows = 0; rows < maxSize; rows++) {
+        for(int i = 0; i < (strlen(word)-1); i++)
+            if(mtx[rows][cols] == word[i] && mtx[rows][cols] == word[i+1])
+                wordCount++;
+        cols++;
+    }
 
     return wordCount;
 }
