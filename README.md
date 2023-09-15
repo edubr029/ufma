@@ -7,3 +7,4 @@ Sources codes are organized by course discipline:
 |--|--|
 |[IPEE](https://github.com/edubr029/ufma/tree/main/IPEE/README.md "README.md")|**Indutrodução a Programação**: Portugol.|
 |[LPEE](https://github.com/edubr029/ufma/tree/main/LPEE/README.md "README.md")|**Linguagem de Programação**: C.|
+|[LABCD](https://github.com/edubr029/ufma/tree/main/LABCD/README.md "README.md")|**Laboratório de Circuitos Digitais**: Circuitos.|
