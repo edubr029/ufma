@@ -13,5 +13,7 @@ All programs were made for "Construtor Virtual y Simulador de Circuitos Digitale
 
 |**Source Code**|**Description**|
 |--|--|
-|[01 - serial-counter_0711.txt](https://github.com/edubr029/ufma/blob/main/LABCD/serial-counter_0711.txt "00 - serial-counter_0711.txt")|P3 Circuitos Digitais|
-|[02 - traffic-lights_1509.txt](https://github.com/edubr029/ufma/blob/main/LABCD/traffic-lights_1509.txt "01 - traffic-lights_1509.txt")|Primeiro circuito criado|
+|[01 - serial-counter_0711.txt](https://github.com/edubr029/ufma/blob/main/LABCD/serial-counter_0711.txt "01 - serial-counter_0711.txt")|P3 Circuitos Digitais|
+|[02 - traffic-lights_1509.txt](https://github.com/edubr029/ufma/blob/main/LABCD/traffic-lights_1509.txt "02 - traffic-lights_1509.txt")|Primeiro circuito criado|
+|[03 - 3in-1out_most-bit_2209.txt](https://github.com/edubr029/ufma/blob/main/LABCD/3in-1out_most-bit_2209.txtt "03 - 3in-1out_most-bit_2209.txt")|Acionar LED quando a maioria dos bits forem 1|
+|[04 - 4-bit-asynchronous-JK-counter_2411.txt](https://github.com/edubr029/ufma/blob/main/LABCD/4-bit-asynchronous-JK-counter_2411.txt "04 - 4-bit-asynchronous-JK-counter_2411.txt")|Contador assíncrono usando Flip-Flop JK|
