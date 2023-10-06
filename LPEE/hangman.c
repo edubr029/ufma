@@ -14,13 +14,25 @@ typedef struct hangman_data {
 } hm_t;
 
 void savedWords(hm_t *word_list) {
-    char themes[MAX_RND][MAX_SIZE] = {"Alimento", "Alimento", "Animal", "Animal", "Cores", "Cores", "Profissão", "Profissão", "Transporte", "Transporte"};
-    char words[MAX_RND][MAX_SIZE] = {"Melancia", "Castanha", "Hamster", "Crocodilo", "Vermelho", "Marrom", "Encanador", "Médico", "Empilhadeira", "Bicicleta"};
-
-    for(int i = 0; i < MAX_RND; i++) {
-        strcpy(word_list[i].theme, themes[i]);
-        strcpy(word_list[i].word, words[i]);
+    FILE *file = fopen("words.txt", "r");
+    if(file == NULL) {
+        printf("Não foi possível abrir o arquivo words.txt");
+        return;
     }
+
+    char line[MAX_SIZE];
+    int i = 0;
+    while(fgets(line, sizeof(line), file)) {
+        char *theme = strtok(line, ",");
+        char *word = strtok(NULL, "\n");
+
+        if(theme && word) {
+            strcpy(word_list[i].theme, theme);
+            strcpy(word_list[i].word, word);
+            i++;
+        }
+    }
+    fclose(file);
 }
 
 void defineGamemode(int *gamemode) {
