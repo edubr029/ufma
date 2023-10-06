@@ -1,10 +1,37 @@
-Alimento,Melancia
-Alimento,Castanha
-Animal,Hamster
-Animal,Crocodilo
-Cores,Vermelho
-Cores,Marrom
-Profissão,Encanador
-Profissão,Médico
-Transporte,Empilhadeira
-Transporte,Bicicleta
+Alimento;Melancia
+Alimento;Castanha
+Alimento;Amêndoa
+Animal;Hamster
+Animal;Crocodilo
+Animal;Ornitorrinco
+Animal;Chinchila
+Animal;Cão Guia
+Animal;Gato Siamês
+Cores;Vermelho
+Cores;Marrom
+Cores;Azul
+Cores;Cinza
+Profissão;Encanador
+Profissão;Médico
+Profissão;Astronauta
+Profissão;Bibliotecário
+Transporte;Empilhadeira
+Transporte;Bicicleta
+Transporte;Trator
+Transporte;Patins
+Esporte;Futebol
+Esporte;Voleibol
+País;Brasil
+País;Argentina
+Cidade;São Paulo
+Cidade;Rio de Janeiro
+Instrumento Musical;Violão
+Instrumento Musical;Piano
+Elemento Químico;Oxigênio
+Elemento Químico;Hidrogênio
+Fruta Tropical;Manga
+Fruta Tropical;Abacaxi
+Profissão da Saúde;Médico Veterinário
+Profissão da Saúde;Enfermeiro
+Meio de Transporte;Carro Elétrico
+Meio de Transporte;Bicicleta Mountain Bike
