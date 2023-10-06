@@ -1,0 +1,10 @@
+Alimento,Melancia
+Alimento,Castanha
+Animal,Hamster
+Animal,Crocodilo
+Cores,Vermelho
+Cores,Marrom
+Profissão,Encanador
+Profissão,Médico
+Transporte,Empilhadeira
+Transporte,Bicicleta
