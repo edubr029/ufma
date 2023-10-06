@@ -25,9 +25,10 @@ void updateCounts(char c, Counts* counts){
     // Se o caractere for um dígito, incrementa a contagem de números
     if(isdigit(c))
       counts->numbers++;
-    else if(isalpha(c)) { // Verifica se o caractere é uma letra
-      if(isVowel(c)) counts->vowels++; // Se for uma vogal, incrementa a contagem de vogais
-      else counts->consonants++; // Se não for uma vogal (ou seja, é uma consoante), incrementa a contagem de consoantes
+    // Verifica se é um caractere alfanumérico
+    else if(isalpha(c)) {               
+      if(isVowel(c)) counts->vowels++;  // Se for uma vogal, incrementa a contagem de vogais
+      else counts->consonants++;        // Se não for uma vogal (ou seja, é uma consoante), incrementa a contagem de consoantes
     }
     // Se o caractere não for alfanumérico nem espaço em branco nem nova linha, incrementa a contagem de caracteres especiais
     else if(!isalnum(c) && c != ' ' && c != '\n')
@@ -60,7 +61,7 @@ void countCharacterTypes() {
 bool askRestart() {
     char restart[4]; // String para armazenar a resposta do usuário
     
-    printf("Você deseja reinicar o programa?");
+    printf("Você deseja reinicar o programa?\n");
     printf("Sim (S/s) | Não (N/n): ");
     
     if(scanf("%3s", restart) != 1){ // Lê a resposta do usuário. Se houver um erro, imprime uma mensagem e retorna falso.
@@ -81,10 +82,10 @@ bool askRestart() {
 
 int main(){
   setlocale(LC_ALL, "Portuguese"); // Define o locale para Português
-  
+
   do{
     countCharacterTypes(); // Conta os diferentes tipos de caracteres na string do usuário
   } while(askRestart());   // Pergunta ao usuário se ele deseja reiniciar o programa. Se sim, repete o processo.
-  
+
   return 0;
 }
