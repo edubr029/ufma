@@ -23,7 +23,7 @@ void savedWords(hm_t *word_list) {
     char line[MAX_SIZE];
     int i = 0;
     while(fgets(line, sizeof(line), file)) {
-        char *theme = strtok(line, ",");
+        char *theme = strtok(line, ";");
         char *word = strtok(NULL, "\n");
 
         if(theme && word) {
