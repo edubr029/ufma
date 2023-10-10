@@ -19,6 +19,9 @@ All programs were made for "Construtor Virtual y Simulador de Circuitos Digitale
 |[04 - 4-bit-asynchronous-JK-counter_2411.txt](https://github.com/edubr029/ufma/blob/main/LABCD/4-bit-asynchronous-JK-counter_2411.txt "04 - 4-bit-asynchronous-JK-counter_2411.txt")|Contador assíncrono de 4 bits usando Flip-Flop JK|
 |[05 - 2-bit-synchronous-JK-counter_2909.txt](https://github.com/edubr029/ufma/blob/main/LABCD/2-bit-synchronous-JK-counter_2909.txt "05 - 2-bit-synchronous-JK-counter_2909.txt")|Contador síncrono de 2 bits usando Flip-Flop JK|
 
+###### Naming Convention:
+`<number of the circuit> - <name of the circuit>_<date of the class>.txt`
+
 
 ### Screenshots
 
