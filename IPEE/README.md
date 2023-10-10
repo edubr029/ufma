@@ -22,3 +22,6 @@ All programs were made for "Portugol Studio", having the extension `.por`.
 |[13 - DEIN0071_EE_RENDIMENTO-KM-POR-L_13-10-22.por](https://github.com/edubr029/ufma/blob/main/IPEE/DEIN0071_EE_RENDIMENTO-KM-POR-L_13-10-22.por "13 - DEIN0071_EE_RENDIMENTO-KM-POR-L_13-10-22.por")|Cálculo do rendimento de combustível por quilômetro|
 |[14 - DEIN0071_EE_RESISTENCIA-EQUIVALENTE_27-10-22.por](https://github.com/edubr029/ufma/blob/main/IPEE/DEIN0071_EE_RESISTENCIA-EQUIVALENTE_27-10-22.por "14 - DEIN0071_EE_RESISTENCIA-EQUIVALENTE_27-10-22.por")|Cálculo da resistência equivalente|
 |[15 - DEIN0071_EE_SALARIO-REAJUSTADO_13-10-22.por](https://github.com/edubr029/ufma/blob/main/IPEE/DEIN0071_EE_SALARIO-REAJUSTADO_13-10-22.por "15 - DEIN0071_EE_SALARIO-REAJUSTADO_13-10-22.por")|Cálculo do reajuste salarial|
+
+###### Naming Convention:
+`<number of the program> - <name of the program>_<date of the class>.por`
