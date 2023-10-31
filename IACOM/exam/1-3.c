@@ -3,10 +3,8 @@
 #include <xc.h>
 #include <pic16f84a.h>
 
-#pragma config FOSC = XT        // Oscillator Selection bits (XT oscillator)
-#pragma config WDTE = OFF       // Watchdog Timer (WDT disabled)
-#pragma config PWRTE = OFF      // Power-up Timer Enable bit (Power-up Timer is disabled)
-#pragma config CP = OFF         // Code Protection bit (Code protection disabled)
+// Configuration word
+__CONFIG(FOSC_XT & WDTE_OFF & PWRTE_OFF & CP_OFF);
 
 void configIO(){
     TRISAbits.TRISA1 = 1; // configura RA1 como entrada
@@ -19,16 +17,17 @@ void configIO(){
     TRISBbits.TRISB2 = 0; // configura RB2 como saída
 }
 
-void systemControl(){
-    while(1){
-        short int I = PORTAbits.RA1; // configura RA1 como I
-        short int A = PORTAbits.RA2; // configura RA2 como A
-        short int B = PORTAbits.RA3; // configura RA3 como B
-        short int C = PORTAbits.RA4; // configura RA4 como C
 
-        short int Eve = (I && !A && !B) || (I && !A && C);
-        short int Evs = I && B && C;
-        short int Err = I && B && !C || I && A && !B;
+void systemControl(){
+    short int I = PORTAbits.RA1; // configura RA1 como I
+    short int A = PORTAbits.RA2; // configura RA2 como A
+    short int B = PORTAbits.RA3; // configura RA3 como B
+    short int C = PORTAbits.RA4; // configura RA4 como C
+
+    while(I){
+        short int Eve = (!A && !B) || (!A && C);    // 'A.'B + 'A.C
+        short int Evs = (B &se& C);                 // B.C
+        short int Err = (B && !C) || (A && !B);     // B.'C + A.'B
 
         PORTBbits.RB0 = Evs; // configura RB0 como Evs
         PORTBbits.RB1 = Eve; // configura RB1 como Eve
