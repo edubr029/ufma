@@ -26,7 +26,7 @@ void systemControl(){
 
     while(I){
         short int Eve = (!A && !B) || (!A && C);    // 'A.'B + 'A.C
-        short int Evs = (B &se& C);                 // B.C
+        short int Evs = (B && C);                 // B.C
         short int Err = (B && !C) || (A && !B);     // B.'C + A.'B
 
         PORTBbits.RB0 = Evs; // configura RB0 como Evs
