@@ -5,7 +5,7 @@ Animal;Hamster
 Animal;Crocodilo
 Animal;Ornitorrinco
 Animal;Chinchila
-Animal;Cão Guia
+Animal;Cao Guia
 Animal;Gato Siames
 Cores;Vermelho
 Cores;Marrom
