@@ -1,20 +1,20 @@
 Alimento;Melancia
 Alimento;Castanha
-Alimento;Amêndoa
+Alimento;Amendoa
 Animal;Hamster
 Animal;Crocodilo
 Animal;Ornitorrinco
 Animal;Chinchila
 Animal;Cão Guia
-Animal;Gato Siamês
+Animal;Gato Siames
 Cores;Vermelho
 Cores;Marrom
 Cores;Azul
 Cores;Cinza
 Profissão;Encanador
-Profissão;Médico
+Profissão;Medico
 Profissão;Astronauta
-Profissão;Bibliotecário
+Profissão;Bibliotecario
 Transporte;Empilhadeira
 Transporte;Bicicleta
 Transporte;Trator
@@ -25,13 +25,13 @@ País;Brasil
 País;Argentina
 Cidade;São Paulo
 Cidade;Rio de Janeiro
-Instrumento Musical;Violão
+Instrumento Musical;Violao
 Instrumento Musical;Piano
-Elemento Químico;Oxigênio
+Elemento Químico;Oxigenio
 Elemento Químico;Hidrogênio
 Fruta Tropical;Manga
 Fruta Tropical;Abacaxi
-Profissão da Saúde;Médico Veterinário
+Profissão da Saúde;Medico Veterinario
 Profissão da Saúde;Enfermeiro
-Meio de Transporte;Carro Elétrico
+Meio de Transporte;Carro Eletrico
 Meio de Transporte;Bicicleta Mountain Bike
