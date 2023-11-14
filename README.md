@@ -1,3 +1,5 @@
+<img src="https://portalpadrao.ufma.br/site/institucional/superintendencias/sce/manual-da-marca/png-logo-ufma-colorido.png/@@images/image.png" width="150" align="right">
+
 # UFMA
 All source codes of the programs made during the Electrical Engineering course at UFMA
 
