@@ -4,7 +4,7 @@ You will find here, all **source codes** of the classes of this discipline.
 
 
 ## Source codes
-All programs were made for "Construtor Virtual y Simulador de Circuitos Digitales", having the extension `.txt`.
+All programs were made for "Construtor Virtual y Simulador de Circuitos Digitales", having the extension `.txt` and for Arduino (ATmega328P), having the extension `.ino`.
 
 #### Required Program 
  
@@ -24,18 +24,23 @@ All programs were made for "Construtor Virtual y Simulador de Circuitos Digitale
 
 
 ### Screenshots
-
-##### 01 - serial-counter_0711:
-![App Screenshot](https://imgur.com/CsiaHqO.png)
-
-##### 02 - traffic-lights_1509:
-![App Screenshot](https://imgur.com/n2acvjA.png)
-
-##### 03 - 3in-1out_most-bit_2209:
-![App Screenshot](https://imgur.com/dOVlzFJ.png)
-
-##### 04 - 4-bit-asynchronous-JK-counter_2411:
-![App Screenshot](https://imgur.com/oJhHky7.png)
-
-##### 05 - 2-bit-synchronous-JK-counter_2909:
-![App Screenshot](https://imgur.com/7jnkYVm.png)
+<details>
+    <summary><b>01 - serial-counter_0711</b></summary>
+        <img src="https://imgur.com/CsiaHqO.png" alt="01 - serial-counter_0711">
+</details>
+<details>
+    <summary><b>02 - traffic-lights_1509</b></summary>
+        <img src="https://imgur.com/n2acvjA.png" alt="02 - traffic-lights_1509">
+</details>
+<details>
+    <summary><b>03 - 3in-1out_most-bit_2209</b></summary>
+        <img src="https://imgur.com/dOVlzFJ.png" alt="03 - 3in-1out_most-bit_2209">
+</details>
+<details>
+    <summary><b>04 - 4-bit-asynchronous-JK-counter_2411</b></summary>
+        <img src="https://imgur.com/oJhHky7.png" alt="04 - 4-bit-asynchronous-JK-counter_2411">
+</details>
+<details>
+    <summary><b>05 - 2-bit-synchronous-JK-counter_2909</b></summary>
+        <img src="https://imgur.com/7jnkYVm.png" alt="05 - 2-bit-synchronous-JK-counter_2909">
+</details>
