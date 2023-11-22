@@ -24,6 +24,8 @@ All programs were made for "Construtor Virtual y Simulador de Circuitos Digitale
 
 
 ### Screenshots
+
+#### Construtor Virtual y Simulador de Circuitos Digitales:
 <details>
     <summary><b>01 - serial-counter_0711</b></summary>
         <img src="https://imgur.com/CsiaHqO.png" alt="01 - serial-counter_0711">
@@ -33,7 +35,7 @@ All programs were made for "Construtor Virtual y Simulador de Circuitos Digitale
         <img src="https://imgur.com/n2acvjA.png" alt="02 - traffic-lights_1509">
 </details>
 <details>
-    <summary><b>03 - 3in-1out_most-bit_2209</b></summary>
+    <summary><b>03 - 3 in-1out_most-bit_2209</b></summary>
         <img src="https://imgur.com/dOVlzFJ.png" alt="03 - 3in-1out_most-bit_2209">
 </details>
 <details>
@@ -43,4 +45,10 @@ All programs were made for "Construtor Virtual y Simulador de Circuitos Digitale
 <details>
     <summary><b>05 - 2-bit-synchronous-JK-counter_2909</b></summary>
         <img src="https://imgur.com/7jnkYVm.png" alt="05 - 2-bit-synchronous-JK-counter_2909">
+</details>
+
+#### Arduino:
+<details>
+    <summary><b>W.I.P.</b></summary>
+        Soon...
 </details>
