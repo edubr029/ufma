@@ -6,13 +6,14 @@ You will find here, all **source codes** of the classes of this discipline.
 ## Source codes
 All programs were made for "C", having the extension `.c`.
 
-#### Before you start:
-
-This section is divided into tree parts:
-- [**First Part**](#first-part): Programs made in the during the course.
-- [**Second Part**](#second-part): Exercise list programs.
-- [**Third Part**](#third-part): Exam programs¹.
-###### ¹Nem todos os códigos estão em pleno funcionamento, pois foram desenvolvidos especificamente para a avaliação e não receberam quaisquer correções posteriores.
+> [!IMPORTANT]
+> #### Before you start
+> This section is divided into four parts:
+> - [**First Part**](#first-part): Programs made in the during the course.
+> - [**Second Part**](#second-part): Exercise list programs.
+> - [**Third Part**](#third-part): Exam programs¹.
+> - [**Extras**](#extras): Programs made for fun or proof of concept.
+> ###### ¹Not all the codes are fully functional, as they were developed specifically for the evaluation and have not received any subsequent corrections.
 
 ### First Part
 |**Source Code**|**Description**|
@@ -28,8 +29,6 @@ This section is divided into tree parts:
 |[09 - random_function.c][1_09]|Gerando números aleatórios para usuários|
 |[10 - linked_list.c][1_10]|Manipulação de listas encadeadas|
 |[11 - hangman.c][1_11]|Jogo da forca¹|
-|[12 - count-character-type.c][1_12]|Conta os tipos de caracteres de uma string|
-|[13 - palindrome.c][1_13]|(Proof of concept) Verifica se uma string é um palíndromo|
 ###### ¹Necessita do `word.txt` no mesmo diretório.
 
 ### Second Part
@@ -56,10 +55,19 @@ This section is divided into tree parts:
 |[06 - rep-2.c][3_06]|Troca de elementos de uma matriz quadrada **_n_ x _n_**|
 |[07 - final.c][3_07]|Encontrar a transposta e o quadrado de uma matriz **_n_ x _n_**|
 
+### Extras
+|**Source Code**|**Description**|
+|--|--|
+|[01 - count-character-type.c][4_01]|Conta os tipos de caracteres de uma string|
+|[02 - palindrome.c][4_02]|(Proof of concept) Verifica se uma string é um palíndromo|
+|[03 - animation.c][4_03]|(Multiplatform) Animação de carregamento no terminal|
+|[04 - standard-galactic-alphabet.c][4_04]|(ANSI Escape Test) Tradutor para standard galactic alphabet| 
+
 ###### Naming Convention:
 `<number of the program> - <name of the program>.c`
 
 <!-- links variables -->
+<!-- Part One -->
 [1_01]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_line.c (01 - matrix_line.c)
 [1_02]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_multi.c (02 - matrix_multi.c)
 [1_03]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_invert.c (03 - matrix_invert.c)
@@ -71,15 +79,15 @@ This section is divided into tree parts:
 [1_09]: https://github.com/edubr029/ufma/blob/main/LPEE/random_function.c (09 - random_function.c)
 [1_10]: https://github.com/edubr029/ufma/blob/main/LPEE/linked_list.c (10 - linked_list.c)
 [1_11]: https://github.com/edubr029/ufma/blob/main/LPEE/hangman.c (11 - hangman.c)
-[1_12]: https://github.com/edubr029/ufma/blob/main/LPEE/count-character-type.c (12 - count-character-type.c)
-[1_13]: https://github.com/edubr029/ufma/blob/main/LPEE/palindrome.c (13 - palindrome.c)
 
+<!-- Part Two -->
 [2_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-1_2.c (01 - quest-1_2.c)
 [2_02]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-28.c (02 - quest-28.c)
 [2_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-29.c (03 - quest-29.c)
 [2_04]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-47.c (04 - quest-47.c)
 [2_05]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-48.c (05 - quest-48.c)
 
+<!-- Part Three -->
 [3_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p2-1.c  (01 - p2-1.c)
 [3_02]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p2-2.c  (02 - p2-2.c)
 [3_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p3-1.c  (03 - p3-1.c) 
@@ -87,3 +95,9 @@ This section is divided into tree parts:
 [3_05]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/rep-1.c (05 - rep-1.c)
 [3_06]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/rep-2.c (06 - rep-2.c)
 [3_07]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/final.c (07 - final.c)
+
+<!-- Extras -->
+[4_01]: https://github.com/edubr029/ufma/blob/main/LPEE/count-character-type.c (01 - count-character-type.c)
+[4_02]: https://github.com/edubr029/ufma/blob/main/LPEE/palindrome.c (02 - palindrome.c)
+[4_03]: https://github.com/edubr029/ufma/blob/main/LPEE/animation.c (03 - animation.c)
+[4_04]: https://github.com/edubr029/ufma/blob/main/LPEE/standard-galactic-alphabet.c (04 - standard-galactic-alphabet.c)
