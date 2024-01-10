@@ -2,18 +2,19 @@
 
 You will find here, all **source codes** of the classes of this discipline.
 
-
 ## Source codes
 All programs were made for "C", having the extension `.c`.
 
 > [!IMPORTANT]
 > #### Before you start
 > This section is divided into four parts:
+>
 > - [**First Part**](#first-part): Programs made in the during the course.
 > - [**Second Part**](#second-part): Exercise list programs.
-> - [**Third Part**](#third-part): Exam programs¹.
+> - [**Third Part**](#third-part): Exam programs[^1].
 > - [**Extras**](#extras): Programs made for fun or proof of concept.
-> ###### ¹Not all the codes are fully functional, as they were developed specifically for the evaluation and have not received any subsequent corrections.
+
+[^1]: Not all the codes are fully functional, as they were developed specifically for the evaluation and have not received any subsequent corrections.
 
 ### First Part
 |**Source Code**|**Description**|
@@ -28,21 +29,21 @@ All programs were made for "C", having the extension `.c`.
 |[08 - struct_function.c][1_08]|Calculando a média de alunos com estruturas|
 |[09 - random_function.c][1_09]|Gerando números aleatórios para usuários|
 |[10 - linked_list.c][1_10]|Manipulação de listas encadeadas|
-|[11 - hangman.c][1_11]|Jogo da forca¹|
-###### ¹Necessita do `word.txt` no mesmo diretório.
+|[11 - hangman.c][1_11]|Jogo da forca[^2]|
+
+[^2]: Requires `word.txt` in the same directory.
 
 ### Second Part
 |**Source Code**|**Description**|
 |--|--|
 |[01 - quest-1_2.c][2_01]|Inversão de número inteiro e função de potenciação|
-|[02 - quest-28.c][2_02]|Abreviação de nomes por token¹|
+|[02 - quest-28.c][2_02]|Abreviação de nomes por token[^3]|
 |[03 - quest-29.c][2_03]|Contagem de substrings em uma string|
 |[04 - quest-47.c][2_04]|Banco de dados de usuário utilizando struct|
-|[05 - quest-48.c][2_05]|Sistema de login²|
-<h6>
-    ¹A escolha por uso de token não foi por exigência do exercício.<br>
-    ²Não compatível com Windows.
-</h6>
+|[05 - quest-48.c][2_05]|Sistema de login[^4]|
+
+[^3]: The choice to use a token was not a requirement of the exercise.
+[^4]: Not compatible with Windows.
 
 ### Third Part
 |**Source Code**|**Description**|
@@ -61,7 +62,7 @@ All programs were made for "C", having the extension `.c`.
 |[01 - count-character-type.c][4_01]|Conta os tipos de caracteres de uma string|
 |[02 - palindrome.c][4_02]|(Proof of concept) Verifica se uma string é um palíndromo|
 |[03 - animation.c][4_03]|(Multiplatform) Animação de carregamento no terminal|
-|[04 - standard-galactic-alphabet.c][4_04]|(ANSI Escape Test) Tradutor para standard galactic alphabet| 
+|[04 - standard-galactic-alphabet.c][4_04]|(ANSI Escape Test) Tradutor para standard galactic alphabet|
 
 ###### Naming Convention:
 `<number of the program> - <name of the program>.c`
@@ -90,8 +91,8 @@ All programs were made for "C", having the extension `.c`.
 <!-- Part Three -->
 [3_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p2-1.c  (01 - p2-1.c)
 [3_02]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p2-2.c  (02 - p2-2.c)
-[3_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p3-1.c  (03 - p3-1.c) 
-[3_04]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p3-2.c  (04 - p3-2.c) 
+[3_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p3-1.c  (03 - p3-1.c)
+[3_04]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p3-2.c  (04 - p3-2.c)
 [3_05]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/rep-1.c (05 - rep-1.c)
 [3_06]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/rep-2.c (06 - rep-2.c)
 [3_07]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/final.c (07 - final.c)

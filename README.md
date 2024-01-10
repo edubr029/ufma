@@ -9,9 +9,10 @@ Sources codes are organized by course discipline:
 |--|--|--|
 |[IPEE][ipee]|**Indutrodução a Programação**|Portugol|
 |[LPEE][lpee]|**Linguagem de Programação**|C|
-|[LABCD][labcd]|**Laboratório de Circuitos Digitais**|Special¹ and Arduino|
+|[LABCD][labcd]|**Laboratório de Circuitos Digitais**|Special[^1] and Arduino|
 |[IACOM][iacom]|**Introdução à Arquitetura de Computadores**|Assembly and C|
-###### ¹Special program for simulating digital circuits.
+
+[^1]: Special program for simulating digital circuits.
 
 #### Support:
 
