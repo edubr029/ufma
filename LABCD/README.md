@@ -6,10 +6,10 @@ You will find here, all **source codes** of the classes of this discipline.
 ## Source codes
 All programs were made for "Construtor Virtual y Simulador de Circuitos Digitales", having the extension `.txt` and for Arduino (ATmega328P), having the extension `.ino`.
 
-#### Required Program 
- 
-[Construtor Virtual y Simulador de Circuitos Digitales][rqmt_01-0] 
-- [Program User Manual][rqmt_01-1]
+> [!NOTE]
+> To use the `.txt` files you will need to use the software [Construtor Virtual y Simulador de Circuitos Digitales][rqmt_01-0][^1].
+
+[^1]: [Program User Manual][rqmt_01-1]
 
 |**Source Code**|**Description**|
 |--|--|
