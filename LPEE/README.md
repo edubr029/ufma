@@ -62,31 +62,31 @@ All programs were made for "C", having the extension `.c`.
 |[01 - count-character-type.c][4_01]|Conta os tipos de caracteres de uma string|
 |[02 - palindrome.c][4_02]|(Proof of concept) Verifica se uma string é um palíndromo|
 |[03 - animation.c][4_03]|(Multiplatform) Animação de carregamento no terminal|
-|[04 - standard-galactic-alphabet.c][4_04]|(ANSI Escape Test) Tradutor para standard galactic alphabet|
+|[04 - standard-galactic-alphabet_converter.c][4_04]|(ANSI Escape Test) Tradutor para standard galactic alphabet|
 
 ###### Naming Convention:
 `<number of the program> - <name of the program>.c`
 
 <!-- links variables -->
 <!-- Part One -->
-[1_01]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_line.c (01 - matrix_line.c)
-[1_02]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_multi.c (02 - matrix_multi.c)
-[1_03]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_invert.c (03 - matrix_invert.c)
+[1_01]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_line.c     (01 - matrix_line.c)
+[1_02]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_multi.c    (02 - matrix_multi.c)
+[1_03]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_invert.c   (03 - matrix_invert.c)
 [1_04]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_diagonal.c (04 - matrix_diagonal.c)
-[1_05]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_trans.c (05 - matrix_trans.c)
+[1_05]: https://github.com/edubr029/ufma/blob/main/LPEE/matrix_trans.c    (05 - matrix_trans.c)
 [1_06]: https://github.com/edubr029/ufma/blob/main/LPEE/vector_function.c (06 - vector_function.c)
 [1_07]: https://github.com/edubr029/ufma/blob/main/LPEE/string_function.c (07 - string_function.c)
 [1_08]: https://github.com/edubr029/ufma/blob/main/LPEE/struct_function.c (08 - struct_function.c)
 [1_09]: https://github.com/edubr029/ufma/blob/main/LPEE/random_function.c (09 - random_function.c)
-[1_10]: https://github.com/edubr029/ufma/blob/main/LPEE/linked_list.c (10 - linked_list.c)
-[1_11]: https://github.com/edubr029/ufma/blob/main/LPEE/hangman.c (11 - hangman.c)
+[1_10]: https://github.com/edubr029/ufma/blob/main/LPEE/linked_list.c     (10 - linked_list.c)
+[1_11]: https://github.com/edubr029/ufma/blob/main/LPEE/hangman.c         (11 - hangman.c)
 
 <!-- Part Two -->
 [2_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-1_2.c (01 - quest-1_2.c)
-[2_02]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-28.c (02 - quest-28.c)
-[2_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-29.c (03 - quest-29.c)
-[2_04]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-47.c (04 - quest-47.c)
-[2_05]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-48.c (05 - quest-48.c)
+[2_02]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-28.c  (02 - quest-28.c)
+[2_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-29.c  (03 - quest-29.c)
+[2_04]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-47.c  (04 - quest-47.c)
+[2_05]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-48.c  (05 - quest-48.c)
 
 <!-- Part Three -->
 [3_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/p2-1.c  (01 - p2-1.c)
@@ -98,7 +98,7 @@ All programs were made for "C", having the extension `.c`.
 [3_07]: https://github.com/edubr029/ufma/blob/main/LPEE/exam/final.c (07 - final.c)
 
 <!-- Extras -->
-[4_01]: https://github.com/edubr029/ufma/blob/main/LPEE/count-character-type.c (01 - count-character-type.c)
-[4_02]: https://github.com/edubr029/ufma/blob/main/LPEE/palindrome.c (02 - palindrome.c)
-[4_03]: https://github.com/edubr029/ufma/blob/main/LPEE/animation.c (03 - animation.c)
-[4_04]: https://github.com/edubr029/ufma/blob/main/LPEE/standard-galactic-alphabet.c (04 - standard-galactic-alphabet.c)
+[4_01]: https://github.com/edubr029/ufma/blob/main/LPEE/count-character-type.c                 (01 - count-character-type.c)
+[4_02]: https://github.com/edubr029/ufma/blob/main/LPEE/palindrome.c                           (02 - palindrome.c)
+[4_03]: https://github.com/edubr029/ufma/blob/main/LPEE/animation.c                            (03 - animation.c)
+[4_04]: https://github.com/edubr029/ufma/blob/main/LPEE/standard-galactic-alphabet_converter.c (04 - standard-galactic-alphabet_converter.c)
