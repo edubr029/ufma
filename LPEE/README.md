@@ -77,12 +77,12 @@ All programs were made for "C", having the extension `.c`.
 [1_06]: https://github.com/edubr029/ufma/blob/main/LPEE/vector_function.c (06 - vector_function.c)
 [1_07]: https://github.com/edubr029/ufma/blob/main/LPEE/string_function.c (07 - string_function.c)
 [1_08]: https://github.com/edubr029/ufma/blob/main/LPEE/struct_function.c (08 - struct_function.c)
-[1_09]: https://github.com/edubr029/ufma/blob/main/LPEE/random_function.c (09 - random_function.c)
+[1_09]: https://github.com/edubr029/ufma/blob/main/LPEE/random_number.c   (09 - random_number.c)
 [1_10]: https://github.com/edubr029/ufma/blob/main/LPEE/linked_list.c     (10 - linked_list.c)
 [1_11]: https://github.com/edubr029/ufma/blob/main/LPEE/hangman.c         (11 - hangman.c)
 
 <!-- Part Two -->
-[2_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-1_2.c (01 - quest-1_2.c)
+[2_01]: https://github.com/edubr029/ufma/blob/main/LPEE/exercise_list/quest-1_2.c (01 - quest-1_2.c)
 [2_02]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-28.c  (02 - quest-28.c)
 [2_03]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-29.c  (03 - quest-29.c)
 [2_04]: https://github.com/edubr029/ufma/blob/main/LPEE/exercice_list/quest-47.c  (04 - quest-47.c)
